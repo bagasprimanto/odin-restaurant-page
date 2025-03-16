@@ -1,5 +1,6 @@
 import { load as home } from "./home.js"
 import { load as menu } from "./menu.js"
+import { load as contactUs } from "./contact-us.js"
 
 const btnHome = document.querySelector(".btn.nav-home");
 const btnMenu = document.querySelector(".btn.nav-menu");
@@ -8,6 +9,7 @@ const content = document.querySelector("div#content");
 
 btnHome.addEventListener("click", loadHome);
 btnMenu.addEventListener("click", loadMenu);
+btnContactUs.addEventListener("click", loadContactUs);
 
 function clearContent() {
     content.innerHTML = "";
@@ -23,7 +25,11 @@ function loadMenu() {
     menu();
 }
 
-// Call home page load
+function loadContactUs() {
+    clearContent();
+    contactUs();
+}
+
+// Call home page load initially
 home();
-// menu();
 console.log("Hello world!");

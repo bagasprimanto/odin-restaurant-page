@@ -32,8 +32,6 @@ export function load() {
     ]
 
     for (const item of menuItems) {
-        console.log(item);
-
         // Add menu item div
         const menuItemDiv = document.createElement("div");
         menuItemDiv.classList.add("item");
