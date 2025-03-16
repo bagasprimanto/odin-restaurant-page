@@ -1,4 +1,4 @@
-import "./styles.css"
+import "./home.css"
 import homeImageSrc from "./restaurant-homepage.jpg";
 
 export function load() {
